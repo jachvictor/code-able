@@ -1,5 +1,6 @@
 .contain {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -21,7 +22,7 @@
   justify-content: center;
   height: 10rem;
   width: 50%;
-  padding: 0.5rem 0;
+  /* padding: 0.5rem 0; */
   /* transform: rotate(10deg); */
   /* margin: 1rem; */
   /* background-color: aqua; */
@@ -39,8 +40,8 @@
   font-size: larger;
   font-weight: bolder;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   color: silver;
   /* background-color: aqua; */
 }
@@ -54,12 +55,13 @@
 }
 .design h3 {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* width: auto; */
+  /* justify-content: center; */
   font-size: xx-large;
   font-weight: bolder;
   color: #03032c;
-
+  /* height: auto; */
   padding: 0.5rem;
   border-radius: 1rem;
   background-color: white;
@@ -77,19 +79,18 @@
     gap: 0.1px;
   }
   .contain h3 {
-    width: 20rem;
-    height: 2rem;
-    display: flex;
+    font-size: medium;
+    /* width: 20rem; */
+    /* height: 2rem; */
+    /* display: flex; */
   }
   .img {
-    width: 50%;
-    height: 10rem;
+    /* width: 50%; */
+    /* height: 10rem; */
     /* border-radius: 15rem; */
   }
   .quote {
     width: 100%;
     height: auto;
   }
-  
-  
 }

@@ -11,7 +11,7 @@ import {
 function Contactus() {
   return (
     <>
-      <div className="margin"></div>
+      <div className="marginn"></div>
       <main className="contactus">
         <section className="contact-del">
           <h1>Contact Us</h1>

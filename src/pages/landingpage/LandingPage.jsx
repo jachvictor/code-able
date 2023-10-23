@@ -38,7 +38,7 @@ function LandingPage() {
         <Info
           Children={
             <HiOutlineUserGroup
-              size={350}
+              size={100}
               fontWeight={5}
               className="land-icon"
             />
@@ -52,7 +52,7 @@ function LandingPage() {
         {/* <div className="d"></div> */}
         <Info2
           Children={
-            <HiOutlineGlobe size={350} fontWeight={5} className="land-icon" />
+            <HiOutlineGlobe size={100} fontWeight={5} className="land-icon" />
           }
           header={"we serve the society"}
           link={serve}
@@ -63,7 +63,7 @@ function LandingPage() {
         />
         {/* <div className="d"></div> */}
         <Info
-          Children={<LuHelpingHand size={350} className="land-icon" />}
+          Children={<LuHelpingHand size={100} className="land-icon" />}
           header={"What we offer"}
           link={offer}
           text={

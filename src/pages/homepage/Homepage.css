@@ -222,6 +222,12 @@
   .hold-section {
     padding: 1rem 0;
   }
+  .search-icon{
+    /* margin-top: 3rem; */
+    justify-content: center;
+    margin: 7.5rem;
+    width: 10rem;
+  }
 
   .hold-recommend {
     width: 90%;
@@ -242,6 +248,7 @@
   .articles {
     width: 95vw;
   } */
+  
   .options {
     font-size: small;
     justify-content: space-around;

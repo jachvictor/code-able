@@ -51,7 +51,7 @@ function Favorite({ favorites, setFavorites }) {
   };
   return (
     <div className="favorite-contain">
-      <div className="margin"></div>
+      <div className="marginn"></div>
 
       <Confirm
         isOpen={showConfirmDialog}

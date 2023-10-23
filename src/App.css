@@ -1,9 +1,13 @@
 .App {
-  background-color:#03032c;
-  /* display: flexbox; */
-  /* width: 170%; */
+  background-color: #03032c;
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 100%;
   /* height: auto; */
+  flex-wrap: wrap;
   /* color: red; */
+  /* align-items: center; */
+  /* justify-content: center; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,7 +28,7 @@
   padding: 0.2rem;
 }
 .float div:hover {
-  background-color:silver;
+  background-color: silver;
 }
 .float:hover {
   color: #03032c;
@@ -38,14 +42,19 @@
 .icon1:hover {
   border: 1px solid transparent;
 }
-.course{
+.course {
   display: flex;
   flex-direction: column;
   /* width: 99%; */
   /* align-items: center; */
   /* justify-content: center; */
 }
-.margin{
+.marginn {
   background-color: transparent;
   height: 7rem;
+}
+@media screen and (max-width: 500px) {
+  .marginn {
+    height: 5rem;
+  }
 }

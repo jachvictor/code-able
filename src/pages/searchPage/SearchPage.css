@@ -79,14 +79,10 @@
 }
 @media (max-width: 900px) {
   .for-input input {
-    width: 40vw;
+    width: 60vw;
   }
   .search-icon2 {
     width: 3rem;
   }
-  .for-input button{
-    width: 30%;
-    text-align: center;
-    font-size: xx-small;
-  }
+  
 }

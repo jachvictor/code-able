@@ -73,7 +73,7 @@
   background-color: green;
   /* color: v; */
   color: white;
-  width: 10rem;
+  width: auto;
   border: 1px solid silver;
   border-radius: 2rem;
 }
@@ -134,8 +134,8 @@
 @media (max-width: 900px) {
   .icon-container {
     width: 90%;
-    height: auto;
-    padding: 2rem 0;
+    /* height: auto; */
+    /* padding: 2rem 0; */
     /* border: 1px solid white; */
     /* background-color: aqua; */
     /* justify-content: center; */
@@ -152,7 +152,7 @@
   }
   .course-img {
     width: 90%;
-    /* height: 15rem; */
+    /* height: 50%; */
     /* margin-top: 10rem; */
     /* position: relative; */
     /* z-index: -1; */
@@ -186,5 +186,9 @@
     padding: 0 0.5rem;
     color: white;
     background: rgba(0, 0, 0, 0.6);
+  }
+  .feature{
+    padding: 0 1rem;
+    /* border: 5px solid wheat; */
   }
 }

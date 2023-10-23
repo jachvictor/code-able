@@ -18,11 +18,25 @@ function SearchPage({ addToFavorite }) {
   const [display, setDisplay] = useState();
   const [data, setData] = useState([]);
   const [holdQuery, setHoldQuery] = useState(0);
+  const [width, setWidth] = useState(window.innerWidth);
+
   const [showAll, setShowAll] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const query = queryParams.get("query");
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
 
   useEffect(() => {
     const newData = Article.filter((item) =>
@@ -67,7 +81,7 @@ function SearchPage({ addToFavorite }) {
   };
   return (
     <main className="search-container">
-      <div className="margin"></div>
+      <div className="marginn"></div>
       <form onSubmit={(e) => handleSubmit(e)} className="for-input">
         <div>
           <BiSearch className="search-icon2" size={40} />
@@ -78,7 +92,9 @@ function SearchPage({ addToFavorite }) {
           type={"text"}
           placeholder={"search"}
         />
-        <Button onClick={(e) => handleSubmit(e)} text={"search"} />
+        {width >900 && (
+          <Button onClick={(e) => handleSubmit(e)} text={"search"} />
+        )}
       </form>
       <section className="section-head">
         {/* <h3>Articles</h3> */}

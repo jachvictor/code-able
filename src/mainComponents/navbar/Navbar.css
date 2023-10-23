@@ -9,7 +9,7 @@
   height: 7rem;
   position: fixed;
   margin-top: -0.5rem;
-  width: 100vw;
+  width: 94.5%;
   z-index: -1;
   /* box-shadow:5px 10px 30px 10px ; */
 }
@@ -39,8 +39,12 @@
 }
 .navlink {
   display: flex;
-  gap: 3rem;
-  padding: 0 2rem;
+  /* gap: 3rem; */
+  /* padding: 0 3rem; */
+  width: 40%;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: aqua; */
   color: white;
   text-decoration: none;
 }
@@ -113,5 +117,27 @@
   }
   .dropdown-tool {
     margin-right: 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navlink {
+    width: 100%;
+  }
+  .header {
+    height: 5rem;
+  }
+  .navlogo {
+    height: 3rem;
+    width: 4rem;
+    will-change: filter;
+    
+    border-radius: 1rem;
+  }
+  .navlogo:hover {
+    filter:none;
+    
+  }
+  .navlogo.react:hover {
+    filter: none;
   }
 }

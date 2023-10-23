@@ -45,6 +45,7 @@
 .caroll-info h3 {
   display: flex;
   width: 100%;
+
   /* justify-content: center; */
   /* align-items: center; */
   font-size: x-large;
@@ -65,8 +66,11 @@
 
 @media (max-width: 900px) {
   .caroll-info {
-    width: 40%;
+    width: 60%;
+    position: absolute;
     display: flex;
+    background: rgba(0, 0, 0, 0.6);
+    /* background: transparent; */
     /* align-items: center; */
     /* justify-content: center; */
     height: 20rem;
@@ -74,7 +78,7 @@
     padding: 0 0.5rem;
   }
   .c-img {
-    width: 60%;
+    width: 100%;
     background: linear-gradient(
       180deg,
       rgba(10, 5, 47, 0.8) 0%,
@@ -90,6 +94,7 @@
     font-size: large;
   }
   .hold-c-img {
+    display: flex;
     /* flex-direction: column; */
     padding: auto;
   }
@@ -123,5 +128,10 @@
     text-align: start;
     display: flex;
     font-size: large;
+  }
+}
+@media screen and(max-width:500px) {
+  .hold-c-img {
+    flex-direction: column;
   }
 }

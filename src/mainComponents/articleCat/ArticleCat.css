@@ -18,7 +18,7 @@
 }
 .article-cat::-webkit-scrollbar {
   outline: none;
-  width: 10px;
+  width: 2px;
 }
 
 .article-cat::-webkit-scrollbar-track {

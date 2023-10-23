@@ -86,7 +86,7 @@ function Homepage({ addToFavorite }) {
 
   return (
     <div className="home-page">
-      <div className="margin"></div>
+      <div className="marginn"></div>
       <div className="search-icon">
         <BiSearch
           size={40}

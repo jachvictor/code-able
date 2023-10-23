@@ -53,7 +53,7 @@ function AboutUs() {
   ];
   return (
     <div className="about-us">
-      <div className="margin"></div>
+      <div className="marginn"></div>
       {/* <div className="margin"></div> */}
       <main className="about-container">
         <section className="information">

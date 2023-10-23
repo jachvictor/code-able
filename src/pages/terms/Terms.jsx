@@ -45,7 +45,7 @@ function Terms() {
   // b. We disclaim liability for any harm, damage, or losses incurred through the use of the Platform.
   return (
     <>
-      <div className="margin"></div>
+      <div className="marginn"></div>
       <main className="terms-contain">
         <section className="terms-inf0">
           <head>Terms of Service</head>
