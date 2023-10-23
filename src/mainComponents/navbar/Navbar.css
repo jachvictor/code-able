@@ -1,0 +1,117 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid aqua;
+  padding: 0 2rem;
+  /* width: 90vw; */
+  height: 7rem;
+  position: fixed;
+  margin-top: -0.5rem;
+  width: 95%;
+  z-index: -1;
+  /* box-shadow:5px 10px 30px 10px ; */
+}
+/* .navbar-container {
+  z-index: -1;
+} */
+.no-z-index {
+  z-index: +10;
+}
+.z-index {
+  z-index: -1;
+}
+.navlogo {
+  height: 5rem;
+  width: 7rem;
+  will-change: filter;
+  transition: filter 300ms;
+  border-radius: 1rem;
+}
+.navlogo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  height: 6rem;
+  width: 8rem;
+}
+.navlogo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.navlink {
+  display: flex;
+  gap: 3rem;
+  padding: 0 2rem;
+  color: white;
+  text-decoration: none;
+}
+.navlink p {
+  color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.link {
+  text-decoration: none;
+  /* color: rgb(13, 13, 13); */
+}
+.select {
+  color: blueviolet;
+  border-bottom: 5px solid blueviolet;
+  padding: 1rem;
+}
+.dropdown-menu {
+  z-index: +1;
+  /* width: 5rem; */
+  float: right;
+  padding: 1rem;
+  height: auto;
+  background-color: white;
+  position: fixed;
+  /* margin-left: 22rem; */
+  margin-top: 19rem;
+  margin-left: 2rem;
+  border: 1px solid black;
+  /* position: fixed;
+  margin-top: 8rem;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: transparent;
+  z-index: +1;
+} */
+}
+.dropdown-menu p {
+  text-align: center;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dropdown-tool {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;
+}
+@media (max-width: 900px) {
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 2rem; */
+  }
+  .navlink {
+    gap: 1rem;
+  }
+  .dropdown-tool {
+    margin-right: 4rem;
+  }
+}

@@ -1,0 +1,53 @@
+.night {
+    background-color: #03032c;
+    color: white;
+  }
+  .section {
+    background-color: white;
+    color: #03032c;
+  }
+  .general {
+    display: flex;
+    flex-direction: column;
+  /* align-items: center; */
+    /* height: auto; */
+    /* width: fit-content; */
+    padding: 1rem;
+    /* padding-right: 2rem; */
+  }
+  
+  .light-head {
+    background-color: #03032c;
+    color: white;
+    /* margin: 0 1rem; */
+    padding: 0.2rem;
+    border-radius: 1rem;
+  }
+  .night-head {
+    background-color: white;
+    color: #03032c;
+    /* margin: 0 1rem; */
+    padding: 0.2rem;
+    border-radius: 1rem;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  .table{
+      margin: 1rem 1rem;
+      padding:0 1rem;
+      /* width: 60%; */
+      border: 2px solid aqua;
+  }
+  .table ul li{
+      cursor: pointer;
+  }
+  .table li:hover{
+      color: aqua;
+  }
+  .table a{
+    text-decoration: inherit;
+    color: inherit;
+  }
+  

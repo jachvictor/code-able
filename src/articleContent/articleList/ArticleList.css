@@ -1,0 +1,59 @@
+.night {
+  background-color: #03032c;
+  color: white;
+}
+.section {
+  background-color: white;
+  color: #03032c;
+}
+.article-list {
+  list-style: none;
+ 
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* height: auto; */
+  /* width: fit-content; */
+  padding: 0 1rem;
+ 
+  /* padding-right: 2rem; */
+}
+
+.light-head {
+  background-color: #03032c;
+  color: white;
+  /* margin: 0 1rem; */
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.night-head {
+  background-color: white;
+  color: #03032c;
+  /* margin: 0 1rem; */
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.content {
+  display: flex;
+  align-items: center;
+}
+.table {
+  margin: 1rem 1rem;
+  padding: 0 1rem;
+  /* width: 60%; */
+  border: 2px solid aqua;
+}
+.article-list ul {
+  padding: 0;
+  /* background-color: transparent; */
+  list-style: none;
+}
+.article-list li {
+  background-color: transparent;
+  /* cursor: pointer; */
+  padding: 0.5rem;
+  /* list-style: none; */
+}
+.table li:hover {
+  color: aqua;
+}

@@ -1,0 +1,78 @@
+.favorite-contain {
+  /* display: flex; */
+  /* flex-direction: column; */
+  height: auto;
+  padding: 1rem;
+}
+.fav-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  /* background-color: aqua; */
+  border: 1px solid grey;
+}
+.fav-list {
+  display: flex;
+  /* gap: 1rem; */
+  flex-direction: column;
+  height: 50vh;
+  /* background-color: red; */
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1rem 0;
+}
+.fav-img {
+  height: 10rem;
+  width: 100%;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+.fav-info {
+  color: silver;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+
+  padding: 0 2rem;
+}
+.fav-icon {
+  color: silver;
+  cursor: pointer;
+  /* background-color: red; */
+}
+.fav-header {
+  color: white;
+}
+.empty-fav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: silver;
+  font-size: x-large;
+  width: 90%;
+}
+.fav-list::-webkit-scrollbar {
+  outline: none;
+  width: 10px;
+  height: 100%;
+}
+
+.fav-list::-webkit-scrollbar-track {
+  background-color: white;
+}
+.fav-list::-webkit-scrollbar-thumb {
+  background-color: #03032c;
+}
+
+.fav-list::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px gray; */
+  border-radius: 10px;
+}
+.fav-list::-webkit-scrollbar-button {
+  color: #000;
+}
