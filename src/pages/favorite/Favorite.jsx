@@ -63,7 +63,7 @@ function Favorite({ favorites, setFavorites }) {
       <h1 className="fav-header">Favourite Courses</h1>
       {favoriteArt.length === 0 && (
         <div className="empty-fav">
-          <GiEmptyMetalBucketHandle size={500} />
+          <GiEmptyMetalBucketHandle className="empty-icon" size={100} />
           <p>List is empty, add courses to favourite to view here</p>
         </div>
       )}
@@ -74,8 +74,8 @@ function Favorite({ favorites, setFavorites }) {
             <div className="fav-card">
               {/* <section> */}
               <Link
-                className="fav-im"
-                style={{ width: "40%" }}
+                className="hold-fav-img"
+                
                 to={`/course?title=${encodeURIComponent(item.content.title)}`}
               >
                 <img

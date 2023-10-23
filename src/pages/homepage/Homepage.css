@@ -3,6 +3,7 @@
   background-color: #03032c;
   display: flex;
   flex-direction: column;
+  width: 100%;
   /* background-color: white; */
 }
 .search {
@@ -31,7 +32,7 @@
   color: silver;
   display: flex;
   text-align: center;
-  padding:0 1rem;
+  padding: 0 1rem;
   /* background-color: aqua; */
 }
 
@@ -132,7 +133,7 @@
   /* padding: 1rem 0; */
   /* border-bottom: 1px solid silver; */
 }
-.options p{
+.options p {
   cursor: pointer;
 }
 
@@ -191,7 +192,7 @@
 .recommend-head {
   color: silver;
 }
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .hold-search input {
     height: 3rem;
     padding-left: 1rem;
