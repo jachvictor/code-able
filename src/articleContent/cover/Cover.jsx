@@ -13,26 +13,24 @@ function ArticleCover({
   title,
   courseimg,
   authorimg,
-  duration
+  duration,
 }) {
   return (
     <main className="cover-contain">
-      <div className="margin"></div>
+      <div className="marginn"></div>
+      <div className="mode">
+        <BiMoon
+          onClick={() => setNight(!night)}
+          className={night === true ? "moon" : "light"}
+          size={40}
+        />
+      </div>
       <section
         style={{
           backgroundImage: `url(${courseimg})`,
         }}
         className="background-cover"
       >
-        <div className="mode">
-          <div></div>
-          <BiMoon
-            onClick={() => setNight(!night)}
-            className={night === true ? "moon" : "light"}
-            size={40}
-          />
-        </div>
-
         <div className="cover-header">
           <h1>{title}</h1>
           <img src={authorimg} alt={"author"} />
@@ -41,7 +39,7 @@ function ArticleCover({
               <h4>{author}</h4>
             </p>
             <p>
-              {date} {" "} <br /> {duration}
+              {date} <br /> {duration}
             </p>
           </div>
         </div>

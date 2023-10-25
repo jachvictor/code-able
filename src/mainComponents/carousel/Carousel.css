@@ -33,10 +33,13 @@
   flex-direction: column;
   display: flex;
   /* gap: 5rem; */
+  align-items: center;
+  /* justify-content: center; */
   height: 30rem;
+  gap: 1rem;
   width: 40%;
   height: auto;
-  padding: 0 0.5rem;
+  padding: 1rem;
   color: silver;
   background: linear-gradient(90deg, black 0%, black 75%, #03032c 100%);
   /* border-bottom-right-radius:10rem ; */

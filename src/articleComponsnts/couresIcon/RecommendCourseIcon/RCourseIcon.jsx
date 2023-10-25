@@ -16,27 +16,10 @@ function RecommendCourseIcon({
   duration,
 }) {
   const navigate = useNavigate();
-  const homeimages = [
-    {
-      id: "1",
-      img: "/r12.png",
-    },
-    {
-      id: "1",
-      img: "/r13.png",
-    },
-    {
-      id: "1",
-      img: "/r14.png",
-    },
-    {
-      id: "1",
-      img: "/r15.png",
-    },
-  ];
+ 
   return (
     <main className="icon-container2">
-      {/* <Link to={`/python?title=z${encodeURIComponent(link)}`}> */}
+    
       <section
         onClick={() => navigate(`/course?title=${encodeURIComponent(link)}`)}
         className="back-img"

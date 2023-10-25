@@ -39,7 +39,7 @@
   flex-direction: column;
   /* justify-content: center; */
   /* height: inherit; */
-  gap: 0;
+  gap: 0.5rem;
   width: 30%;
   background: rgba(0, 0, 0, 0.2);
   padding: 1rem;
@@ -57,13 +57,11 @@
   stroke-width: 1px;
   font-weight: lighter;
   font-size: xx-large;
-  margin-top: -1rem;
+ 
 }
 .hold-intro p {
   font-weight: 500;
   color: silver;
-
-  margin-top: -0.5rem;
 }
 
 .hold-article {

@@ -15,8 +15,15 @@
   padding: 2rem 0;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
   /* height: 10rem; */
   /* background-color: rgb(31, 29, 29); */
+}
+.terms-inf0 article{
+  flex-direction: column;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
 }
 .terms-img {
   display: flex;

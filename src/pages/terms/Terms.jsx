@@ -48,7 +48,7 @@ function Terms() {
       <div className="marginn"></div>
       <main className="terms-contain">
         <section className="terms-inf0">
-          <head>Terms of Service</head>
+          <h3>Terms of Service</h3>
           <article>
             {terms.map((value) => {
               return (

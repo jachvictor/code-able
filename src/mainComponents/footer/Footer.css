@@ -9,6 +9,11 @@
 .image {
   width: 30%;
 }
+.footer-logo{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2rem;
+}
 .info {
   display: flex;
   color: white;

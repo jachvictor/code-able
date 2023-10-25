@@ -7,6 +7,7 @@ import Carousell from "./carousel/Carousel";
 import DevProfile from "./devProfile/DevProfile";
 import ArticleCat from "./articleCat/ArticleCat";
 import Confirm from "./confirmDialog/Confirm";
+import SideNav from "./sideNav/SideNav";
 
 export {
   Info,
@@ -18,4 +19,5 @@ export {
   DevProfile,
   ArticleCat,
   Confirm,
+  SideNav
 };

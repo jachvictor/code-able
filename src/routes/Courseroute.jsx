@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { Python } from '../courses'
+// import { Python } from '../courses'
 import { ArticlePage } from '../pages'
 
 function Courseroute() {

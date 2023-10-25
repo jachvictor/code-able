@@ -13,7 +13,7 @@ import {
 } from "../pages";
 import Activityroute from "./Activityroute";
 import { Navbar, Header, Footer } from "../mainComponents";
-import { Python } from "../courses";
+// import { Python } from "../courses";
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
@@ -30,13 +30,11 @@ function Pageroute() {
   const addToFavorite = (id) => {
     if (!favorite.some((fav) => fav === id)) {
       setFavorite([...favorite, id]);
-      toast.success(
-        "added successfully, check the favorite page to view"
-      );
+      toast.success("added successfully, check the favorite page to view");
     } else if (favorite.some((fav) => fav === id)) {
       toast.warning("already added to favourite");
     }
-   
+
     // console.log(favorite);
     // const arraySting = JSON.stringify(favorite);
     // localStorage.setItem("favlist", arraySting);
@@ -48,9 +46,7 @@ function Pageroute() {
   return (
     <>
       {path !== "/" && <Navbar />}
-      {/* {!query && <Route path="/course" element={<ArticlePage />} />} */}
       <Routes>
-        {/* {!query && <AboutUs />} */}
         <Route exact path="/" element={<LandingPage />} />
         <Route
           exact
@@ -62,7 +58,7 @@ function Pageroute() {
           path="/course"
           element={<ArticlePage addToFavorite={addToFavorite} />}
         />
-        {/* <Route exact path="/search/:query" element={<SearchPage />} /> */}
+
         <Route
           exact
           path="/search"
@@ -78,7 +74,8 @@ function Pageroute() {
         <Route exact path="/termsofservice" element={<Terms />} />
         <Route exact path="*" element={<ErrorPage />} />
       </Routes>
-      {/* <Footer /> */} <ToastContainer />
+      <Footer />
+      <ToastContainer />
     </>
   );
 }

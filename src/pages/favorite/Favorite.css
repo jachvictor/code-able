@@ -1,15 +1,17 @@
 .favorite-contain {
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
   /* height: auto; */
   padding: 1rem;
 }
 .fav-card {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   height: auto;
   width: 100%;
+  border-radius: 5px;
   /* background-color: aqua; */
   border: 1px solid grey;
 }
@@ -65,7 +67,7 @@
 }
 .empty-icon {
   width: 10rem;
-  size: 500;
+  /* size: 500; */
 }
 .fav-list::-webkit-scrollbar-track {
   background-color: white;
@@ -83,13 +85,15 @@
 @media screen and (max-width: 900px) {
   .fav-card {
     flex-direction: column;
+    width: 100%;
   }
   .hold-fav-img {
-    width: 100%;
+    width: 90%;
   }
   .fav-info {
     flex-direction: column;
     width: 100%;
+    gap: 1rem;
     justify-content: flex-start;
     align-items: flex-start;
   }

@@ -3,7 +3,7 @@ import "./Table.css";
 
 function Table({ children, head, night, item, list }) {
   return (
-    <main className={night === true ? "night table" : "section table"}>
+    <main className={night === true ? "table-contain night" : "table-contain section"}>
       <h2>{head}</h2>
       {/* <div>{children}</div> */}
       <ul>
@@ -11,7 +11,7 @@ function Table({ children, head, night, item, list }) {
           return (
             <>
               <a href={items.link}>
-                <li>{items.name}</li>
+                <li>*{items.name}</li>
               </a>
             </>
           );

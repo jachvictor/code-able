@@ -6,14 +6,13 @@
   overflow-y: auto;
   overflow-x: hidden;
   gap: 2rem;
-  width: 95%;
+  width: 90%;
   height: 100vh;
+  padding: 4rem 0;
+  padding-bottom: 2rem ;
 
   
-  /* width: 95%; */
-  /* background-color: aqua; */
-  /* padding: 2rem 0; */
-  /* padding-left: 0.2rem; */
+  
   /*    edge://surf/     */
 }
 .div {
@@ -58,5 +57,11 @@
 
     /* margin-top: 3rem; */
     /* padding-top: 5rem; */
+  }
+}
+@media screen and (max-width:900px){
+  .contain-cart{
+    padding: 0 0rem;
+    padding-bottom: 2rem ;
   }
 }

@@ -1,13 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   background-color: #03032c;
-  /* display: flex; */
-  /* flex-direction: column; */
-  width: 100%;
-  /* height: auto; */
-  flex-wrap: wrap;
-  /* color: red; */
-  /* align-items: center; */
-  /* justify-content: center; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;

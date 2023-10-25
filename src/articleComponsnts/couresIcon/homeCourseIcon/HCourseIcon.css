@@ -1,7 +1,7 @@
 .icon-container {
   display: flex;
   flex-direction: column;
-  height: 26rem;
+  height: auto;
   width: 100%;
   background-color: white;
   background-color: transparent;
@@ -14,26 +14,18 @@
   border-bottom: 1px solid grey;
   border-top: 1px solid grey;
 }
-.icon-container:hover {
-  /* border: 1px solid aqua; */
-  .write {
-    border-bottom: 2px solid silver;
-  }
-  .featur {
-    border-top: 2px solid silver;
-  }
-}
+
 .writer {
   /* background-color: red; */
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
   gap: 1rem;
-  padding: 0.5rem 2rem;
-  height: 4rem;
+  padding: 0.5rem 1rem;
+  height: auto;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  border-bottom: 2px solid transparent;
+  /* border-bottom: 2px solid white; */
 }
 
 .dp {
@@ -47,27 +39,23 @@
   /* justify-content: space-between; */
   flex-direction: column;
   /* background-color: aqua; */
-  height: 4rem;
-  /* gap: 1px; */
+  height: auto;
+  gap: 0.5rem;
 }
-.hold-name h3 {
-  margin-top: -0.001rem;
-}
-.hold-name p {
-  margin-top: -0.5rem;
-}
+
 .feature {
   /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 2rem;
-  height: 5rem;
+  padding: 1rem;
+  height: auto;
+  /* border: 1px solid silver; */
 
   /* background-color: red; */
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
-  border-top: 2px solid transparent;
+  /* border-top: 2px solid transparent; */
 }
 .feature button {
   background-color: green;
@@ -78,37 +66,41 @@
   border-radius: 2rem;
 }
 .art-info {
-  height: 17rem;
-  width: auto;
+  height: auto;
+  width: 100%;
   display: flex;
   align-items: center;
   /* justify-content: center; */
   /* background-color: aqua; */
+  padding: 0 1rem;
   color: black;
 }
 .details {
   display: flex;
   align-items: center;
   /* justify-content: center; */
+  gap: 1rem;
   flex-direction: column;
   color: gray;
   /* background-color: red; */
-  width: 50%;
+  width: 60%;
 }
 .details h2 {
   color: white;
   /* height: 2rem; */
   text-align: center;
 }
-.detailsw p {
+.details p {
   display: flex;
   text-align: center;
   width: 100%;
   height: auto;
+  padding: 0 1rem;
   /* background-color: aqua; */
   align-items: center;
   justify-content: center;
-  background-color: aqua;
+  text-align: start;
+  /* background-color: aqua; */
 }
 .description {
   display: flex;
@@ -121,9 +113,9 @@
   align-items: center;
   flex-direction: column;
   width: 40%;
-  height: 14rem;
-  padding: 1rem;
-  margin: 1rem;
+  height: 15rem;
+  /* padding: 1rem; */
+  /* margin:0 1rem; */
   border-radius: 2rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -136,6 +128,7 @@
     width: 90%;
     /* height: auto; */
     /* padding: 2rem 0; */
+    font-size: medium;
     /* border: 1px solid white; */
     /* background-color: aqua; */
     /* justify-content: center; */
@@ -148,15 +141,16 @@
     align-items: center;
     /* width: 100%; */
     /* justify-content: center; */
-    padding: 1rem 1rem;
+    /* padding: 1rem 1rem; */
   }
   .course-img {
-    width: 90%;
-    /* height: 50%; */
+    width: 100%;
+    /* height: 12rem; */
+    /* padding: 1rem 0; */
     /* margin-top: 10rem; */
     /* position: relative; */
     /* z-index: -1; */
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(6, 6, 6, 0.6);
   }
   .details {
     /* margin-top: 12rem; */
@@ -181,14 +175,29 @@
     /* height: 20rem; */
   }
   .hold-description {
-    width: 66vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 66vw; */
+    border-radius: 2rem;
     height: 100%;
-    padding: 0 0.5rem;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem ;
     color: white;
     background: rgba(0, 0, 0, 0.6);
   }
-  .feature{
-    padding: 0 1rem;
-    /* border: 5px solid wheat; */
+  
+}
+@media screen and (max-width:500px) {
+  .art-info{
+    font-size: medium;
+  }
+  .hold-name h3{
+    font-size: small;
+  }
+  .hold-description h2{
+    font-size: medium;
   }
 }

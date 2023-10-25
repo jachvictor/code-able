@@ -12,6 +12,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { ImHome, ImBooks } from "react-icons/im";
 import { MdFavorite, MdSearch } from "react-icons/md";
 import { Link } from "react-router-dom";
+import SideNav from "../sideNav/SideNav";
 
 function Navbar(props) {
   const location = useLocation();
@@ -70,7 +71,8 @@ function Navbar(props) {
 
   return (
     <div className="navbar-containe">
-      <nav className={path === "/" ? "header z-index" : "header no-z-index"}>
+      {width < 900 && <>{showmenu && <SideNav />}</>}
+      <nav className="header">
         <Link to={"/"}>
           <img src={logo} alt="" className="navlogo" />
         </Link>
@@ -117,42 +119,6 @@ function Navbar(props) {
             className="dropdown-tool"
           >
             <Icon />
-            {showmenu && (
-              <div className="dropdown-menu">
-                <div className="navli">
-                  <Link className="link" to="/home">
-                    <p className={path === "/home" && "select"}>
-                      <ImBooks
-                        className="icon"
-                        color={path === "/home" && ""}
-                        size={30}
-                      />
-                      Home
-                    </p>
-                  </Link>
-                  <Link className="link" to="/search">
-                    <p className={path === "/search" && "select"}>
-                      <MdSearch
-                        className="icon"
-                        color={path === "/search" && ""}
-                        size={30}
-                      />
-                      Search
-                    </p>
-                  </Link>
-                  <Link className="link" to="/favourite">
-                    <p className={path === "/favourite" && "select"}>
-                      <MdFavorite
-                        className="icon"
-                        color={path === "/favourite" && ""}
-                        size={30}
-                      />
-                      Favourite
-                    </p>
-                  </Link>
-                </div>
-              </div>
-            )}
           </div>
         )}
       </nav>

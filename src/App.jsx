@@ -39,8 +39,7 @@ function App() {
         </div>
       )}
       <Pageroute />
-      <Courseroute />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

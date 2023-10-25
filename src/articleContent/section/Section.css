@@ -12,6 +12,7 @@
   /* align-items: center; */
   /* height: auto; */
   /* width: fit-content; */
+  gap: 1rem;
   padding: 0.2rem;
   /* padding-right: 2rem; */
 }
@@ -32,5 +33,6 @@
 }
 .content {
   display: flex;
+  /* gap: 1rem; */
   align-items: center;
 }

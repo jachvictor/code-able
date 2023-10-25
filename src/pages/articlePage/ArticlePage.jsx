@@ -47,7 +47,6 @@ function ArticlePage({ addToFavorite }) {
         {data.map((value) => {
           return (
             <div>
-              {value.content.title}
               <ArticleCover
                 night={night}
                 setNight={setNight}

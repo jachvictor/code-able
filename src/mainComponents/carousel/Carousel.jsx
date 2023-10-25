@@ -50,12 +50,13 @@ function Carousell() {
       {/* <div className="margin"></div> */}
       <div className="carousel">
         <Carousel
-          showArrows={true}
+          showArrows={false}
           autoPlay={true}
           infiniteLoop={true}
           stopOnHover={false}
           // swipeable={true}
-          // transitionTime={5}
+          // transitionTime={10}
+          swipeable={true}
           selectedItem={homeimages[handleindex]}
           onChange={handleindex}
           showThumbs={false}

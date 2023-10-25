@@ -151,13 +151,17 @@ function Homepage({ addToFavorite }) {
             {select === 3 && <All data={popular} onClick={addToFavorite} />}
           </div>
         </section>
+        
         <section className="hold-recommend">
+        <div className="wrap-recommend">
           <h2 className="recommend-head">
             Recommended
             <BiCheckSquare />
           </h2>
           <Recommend />
+          </div>
         </section>
+      
       </main>
     </div>
   );
