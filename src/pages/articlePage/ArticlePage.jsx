@@ -18,6 +18,7 @@ import {
 import { Article } from "../../database";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { BiArrowToTop, BiUpArrow } from "react-icons/bi";
 import "./ArticlePage.css";
 
 function ArticlePage({ addToFavorite }) {

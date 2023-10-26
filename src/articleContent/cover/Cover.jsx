@@ -1,6 +1,7 @@
 import React from "react";
 import "./Cover.css";
 import img from "../../assets/codedef.png";
+import { BiArrowToTop, BiUpArrow } from "react-icons/bi";
 import { BiMoon, BiSolidMoon, BiSolidBookAdd } from "react-icons/bi";
 import { BsFillBookmarkPlusFill } from "react-icons/bs";
 
@@ -16,12 +17,14 @@ function ArticleCover({
   duration,
 }) {
   return (
-    <main className="cover-contain">
+    <main id="top" className="cover-contain">
       <div className="marginn"></div>
       <div className="mode">
+       <a href="#top"><BiArrowToTop color="aqua" size={50}/></a> 
         <BiMoon
           onClick={() => setNight(!night)}
           className={night === true ? "moon" : "light"}
+          cursor={"pointer"}
           size={40}
         />
       </div>
@@ -49,6 +52,7 @@ function ArticleCover({
           <BsFillBookmarkPlusFill
             className="add-to"
             size={60}
+            cursor={"pointer"}
             onClick={() => onClick()}
           />
         </div>

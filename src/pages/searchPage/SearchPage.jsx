@@ -53,19 +53,8 @@ function SearchPage({ addToFavorite }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setShowAll(false);
-    navigate(`/search?query=${search}`);
+    navigate(`/search?query=${search.toLowerCase()}`);
   };
-
-  // const handleAll = () => {
-  //   console.log("jjj");
-  //   setHoldQuery(1);
-  //   const all= Article.filter((value)=>{
-  //     item.content.title.toLowerCase().includes("")
-  //   })
-  //   setData(all);
-  // };
-
-  // const { pathname } = location;
 
   const displayInfo = () => {
     if (query === null) {
@@ -92,7 +81,7 @@ function SearchPage({ addToFavorite }) {
           type={"text"}
           placeholder={"search"}
         />
-        {width >900 && (
+        {width > 900 && (
           <Button onClick={(e) => handleSubmit(e)} text={"search"} />
         )}
       </form>

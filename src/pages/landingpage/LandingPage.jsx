@@ -37,11 +37,9 @@ function LandingPage() {
       <div className="hold-article">
         <Info
           Children={
-            <HiOutlineUserGroup
-              size={100}
-              fontWeight={5}
-              className="land-icon"
-            />
+            <div className="hold-land-icon">
+              <HiOutlineUserGroup className="land-icon up-down" />
+            </div>
           }
           link={us}
           header={"Who we are"}
@@ -52,7 +50,9 @@ function LandingPage() {
         {/* <div className="d"></div> */}
         <Info2
           Children={
-            <HiOutlineGlobe size={100} fontWeight={5} className="land-icon" />
+            <div className="hold-land-icon">
+              <HiOutlineGlobe className="land-icon icon-rotate" />
+            </div>
           }
           header={"we serve the society"}
           link={serve}
@@ -63,7 +63,11 @@ function LandingPage() {
         />
         {/* <div className="d"></div> */}
         <Info
-          Children={<LuHelpingHand size={100} className="land-icon" />}
+          Children={
+            <div className="hold-land-icon">
+              <LuHelpingHand className="land-icon up-down1" />
+            </div>
+          }
           header={"What we offer"}
           link={offer}
           text={
@@ -77,7 +81,6 @@ function LandingPage() {
                 <li>Programming Language Insights</li>
                 <li>Coding Resources</li>
                 <li>Project Showcases</li>
-              
               </ul>
             </div>
           }
@@ -87,9 +90,9 @@ function LandingPage() {
       {/* <div className="d"></div> */}
       <div className="wrap">
         <section className="start-now">
-          <h2 className="qoute">
+          <h2 className="start-qoute">
             are you ready to solve world problems with programming methodologies
-            and algorithm
+            and algorithms
           </h2>
           <Link to={"/home"}>
             <button className="start"> join us now</button>

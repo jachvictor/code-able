@@ -1,6 +1,7 @@
 .contactus {
   display: flex;
   height: auto;
+  width: 100%;
   padding: 4rem;
   margin-top: -0.5rem;
   background-color: white;
@@ -98,12 +99,13 @@
   .contactus {
     flex-direction: column;
     align-items: center;
+    padding: 0rem;
   }
   .contact-del {
     width: 100%;
   }
   .form {
-    width: 90vw;
-    /* background-color: aqua; */
+    /* width: 90vw; */
+    width: 100%;
   }
 }

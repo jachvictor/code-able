@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { MdFavorite, MdSearch } from "react-icons/md";
 import { ImHome, ImBooks } from "react-icons/im";
+import { TiDelete } from "react-icons/ti";
 
-function SideNav() {
+function SideNav({ setCancel }) {
   const location = useLocation();
   const path = location.pathname;
   return (
@@ -15,7 +16,7 @@ function SideNav() {
         <Link className="link" to="/home">
           <p className={path === "/home" && "select"}>
             <ImBooks
-              className="icon"
+              // className="icon"
               color={path === "/home" && ""}
               size={30}
             />
@@ -36,12 +37,20 @@ function SideNav() {
           <p className={path === "/favourite" && "select"}>
             <MdFavorite
               className="icon"
-              color={path === "/favourite" && "select"}
+              // color={path === "/favourite" && "select"}
               size={30}
             />
             Favourite
           </p>
         </Link>
+        <div>
+          <TiDelete
+            cursor="pointer"
+            color="silver"
+            onClick={() => setCancel(false)}
+            size={40}
+          />
+        </div>
         {/* </div> */}
       </div>
     </main>

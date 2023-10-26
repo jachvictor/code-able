@@ -398,7 +398,9 @@ export const JavaScript = {
             "This is most common loop in programming language, like I said earlier it comprises of initialization, condition and increment/decrement.",
           list: [
             "Code sample:",
-            "For(let i=0//initialization;i<3//condition;i++//increment/decrement)",
+            "For(let i=0//initialization;",
+            "i<3//condition;",
+            "i++//increment/decrement)",
             "{ Code to loop }",
             "just like this;",
             "For(let i=0;i<3;i++)",

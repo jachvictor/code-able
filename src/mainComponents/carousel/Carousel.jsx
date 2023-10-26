@@ -21,7 +21,7 @@ function Carousell() {
     {
       id: "2",
       img: img2,
-      header: " Power of Perspective",
+      header: " Power of Perspection",
       text: "Coding or solving questions helps you understand the world from a different perspective. ",
     },
     {

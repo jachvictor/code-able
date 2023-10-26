@@ -18,9 +18,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* width: 100vw; */
-  /* background-color: brown; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
+  flex-direction: column;
+}
+.up{
+position: fixed;
+width: 100%;
+/* float: right; */
+background-color: blue;
+margin-top: 34rem ;
+}
+.up:nth-child(1){
+border: 1px solid aqua;
 }

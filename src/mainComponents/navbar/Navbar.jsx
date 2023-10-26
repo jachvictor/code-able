@@ -68,10 +68,21 @@ function Navbar(props) {
   const Icon = () => {
     return <IoMdMenu className="dropdown-icon" size={50} />;
   };
+  useEffect(() => {
+    const handler = (e) => setShowmenu(false);
+    window.addEventListener("click", handler);
+    return () => {
+      window.removeEventListener("click", handler);
+    };
+  });
 
+  const HandleIputClick = (e) => {
+    e.stopPropagation();
+    setShowmenu(!showmenu);
+  };
   return (
     <div className="navbar-containe">
-      {width < 900 && <>{showmenu && <SideNav />}</>}
+      {width < 900 && <>{showmenu && <SideNav setCancel={setShowmenu} />}</>}
       <nav className="header">
         <Link to={"/"}>
           <img src={logo} alt="" className="navlogo" />
@@ -114,7 +125,7 @@ function Navbar(props) {
 
         {width < 900 && (
           <div
-            onClick={() => setShowmenu(!showmenu)}
+            onClick={(e) => HandleIputClick(e)}
             style={{ cursor: "pointer" }}
             className="dropdown-tool"
           >
