@@ -14,19 +14,9 @@
   color: black;
 }
 .course {
-  display: flex;
+  /* display: flex; */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  flex-direction: column;
-}
-.up{
-position: fixed;
-width: 100%;
-/* float: right; */
-background-color: blue;
-margin-top: 34rem ;
-}
-.up:nth-child(1){
-border: 1px solid aqua;
+  /* box-sizing: border-box; */
+  /* flex-direction: column; */
 }
