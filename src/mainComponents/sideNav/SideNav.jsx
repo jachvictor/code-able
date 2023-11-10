@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { MdFavorite, MdSearch } from "react-icons/md";
 import { ImHome, ImBooks } from "react-icons/im";
+import {BiBook} from "react-icons/bi"
 import { TiDelete } from "react-icons/ti";
 
 function SideNav({ setCancel }) {
@@ -14,7 +15,7 @@ function SideNav({ setCancel }) {
       <div className="dropdown-menu">
         {/* <div className="hold-navliink"> */}
         <Link className="link" to="/home">
-          <p className={path === "/home" && "select"}>
+          <p className={path === "/home" && "sub-select"}>
             <ImBooks
               // className="icon"
               color={path === "/home" && ""}
@@ -24,7 +25,7 @@ function SideNav({ setCancel }) {
           </p>
         </Link>
         <Link className="link" to="/search">
-          <p className={path === "/search" && "select"}>
+          <p className={path === "/search" && "sub-select"}>
             <MdSearch
               className="icon"
               color={path === "/search" && ""}
@@ -34,24 +35,26 @@ function SideNav({ setCancel }) {
           </p>
         </Link>
         <Link className="link" to="/favourite">
-          <p className={path === "/favourite" && "select"}>
+          <p className={path === "/favourite" && "sub-select"}>
             <MdFavorite
               className="icon"
-              // color={path === "/favourite" && "select"}
+              // color={path === "/favourite" && "sub-select"}
               size={30}
             />
             Favourite
           </p>
         </Link>
-        <div>
-          <TiDelete
-            cursor="pointer"
-            color="silver"
-            onClick={() => setCancel(false)}
-            size={40}
-          />
-        </div>
-        {/* </div> */}
+      
+        {path==="/course" &&
+        <p className={"sub-select"}>
+        <BiBook
+          className="icon"
+          // color={path === "/favourite" && "sub-select"}
+          size={30}
+        />
+        Course
+      </p>
+        }
       </div>
     </main>
   );

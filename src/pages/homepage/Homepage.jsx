@@ -112,7 +112,7 @@ function Homepage({ addToFavorite }) {
             />
             <Button
               onClick={() =>
-                navigate(`/search?query=${encodeURIComponent(search)}`)
+                navigate(`/search?query=${encodeURIComponent(search.toLowerCase())}`)
               }
               text={"Search"}
             />

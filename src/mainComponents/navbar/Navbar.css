@@ -24,15 +24,14 @@
 }
 .navlogo {
   height: 5rem;
-  width: 7rem;
+  width: 8rem;
   will-change: filter;
   transition: filter 300ms;
   border-radius: 1rem;
 }
 .navlogo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
-  height: 6rem;
-  width: 8rem;
+ 
 }
 .navlogo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -97,8 +96,8 @@
     padding: 0 1rem;
   }
   .navlogo {
-    height: 3rem;
-    width: 4rem;
+    height: 4rem;
+    width: 6rem;
     /* will-change: filter; */
 
     border-radius: 1rem;

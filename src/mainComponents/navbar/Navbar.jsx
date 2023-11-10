@@ -13,6 +13,7 @@ import { ImHome, ImBooks } from "react-icons/im";
 import { MdFavorite, MdSearch } from "react-icons/md";
 import { Link } from "react-router-dom";
 import SideNav from "../sideNav/SideNav";
+import { TiDelete } from "react-icons/ti";
 
 function Navbar(props) {
   const location = useLocation();
@@ -129,7 +130,14 @@ function Navbar(props) {
             style={{ cursor: "pointer" }}
             className="dropdown-tool"
           >
-            <Icon />
+            {!showmenu && <Icon />}
+            {showmenu && (
+              <TiDelete
+                cursor="pointer"
+                onClick={() => setCancel(false)}
+                size={60}
+              />
+            )}
           </div>
         )}
       </nav>

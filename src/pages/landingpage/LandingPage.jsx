@@ -43,7 +43,7 @@ function LandingPage() {
           }
           link={us}
           header={"Who we are"}
-          text="The Codeable Community is an innovation and learning platform dedicated to empowering  tech enthusiasts with the latest and most relevant resources. Our mission is to equip our users with the essential and up-to-date skills needed to excel in today's tech-driven society. We aspire to nurture and elevate upcoming developers, helping them reach their full potential and contributing to the growth of the tech community."
+          text="The Cipher skill Community is an innovation and learning platform dedicated to empowering  tech enthusiasts with the latest and most relevant resources. Our mission is to equip our users with the essential and up-to-date skills needed to excel in today's tech-driven society. We aspire to nurture and elevate upcoming developers, helping them reach their full potential and contributing to the growth of the tech community."
         >
           {/* <HiOutlineGlobe /> */}
         </Info>
